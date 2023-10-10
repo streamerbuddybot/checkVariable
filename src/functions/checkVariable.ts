@@ -6,6 +6,7 @@ const variableRegex = /\${(.*?)}/g;
 export default async function checkvariable({ message, channel, channelID, user, userID }: CommandInfo) {
   let messageArray = message.trim().split(" ");
 
+
   const newArray = await Promise.all(
     messageArray.map(async (word, index) => {
       //if it has a variable

@@ -5,9 +5,15 @@ export default async function (varable: string, channel: string, channelID: numb
     case "random":
       switch (intergartion[1]) {
         case "number":
-          const min = 0;
-          const max = 100;
-          return Math.floor(Math.random() * (max - min + 1)) + min;
+          console.log(intergartion);
+          if (intergartion[2]) {
+            const number = intergartion[2].split("-");
+            if (isNaN(Number(number[0])) && isNaN(Number(number[1]))) {
+              return "[Error: The person that made this command did not use the correct variables]"
+            }
+            return Math.floor(Math.random() * (Number(number[1]) - Number(number[0]) + 1)) + Number(number[0]);
+          }
+          return Math.floor(Math.random() * (100 - 0 + 1)) + 0;
       }
 
     case "user":
@@ -16,6 +22,18 @@ export default async function (varable: string, channel: string, channelID: numb
           return user;
         case "id":
           return userID;
+      }
+
+    case "channel":
+      switch (intergartion[1]) {
+        case "name":
+          return channel;
+        case "id":
+          return channelID;
+        case "subsribers":
+          return 0;
+        
+        
       }
   }
 }
