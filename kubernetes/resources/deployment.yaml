@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: streamwizard-backend-checkvariable
-          image: ghcr.io/streamerbuddybot/checkvariable:15eb5d04d0e849e9b18267105b92cca6996e0b49
+          image: ghcr.io/streamerbuddybot/checkvariable:dd0f29f081b36453d4ac21c7adfddfaf2bdbbf71
           ports:
             - containerPort: 80
           envFrom:
