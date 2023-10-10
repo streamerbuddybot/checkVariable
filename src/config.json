@@ -1,0 +1,42 @@
+{
+  "endpoint": {
+    "host": "0.0.0.0",
+    "dns": "localhost",
+    "port": 9090
+  },
+  "commands": {
+    "dns": "localhost",
+    "host": "0.0.0.0",
+    "port": 9091
+  },
+  "irc": {
+    "host": "0.0.0.0",
+    "dns": "localhost",
+    "port": 9092
+  },
+  "eventsub": {
+    "dns": "localhost",
+    "host": "0.0.0.0",
+    "port": 9093
+  },
+  "spotifyAPI": {
+    "dns": "localhost",
+    "host": "0.0.0.0",
+    "port": 9094
+  },
+  "checkVariable": {
+    "dns": "localhost",
+    "host": "0.0.0.0",
+    "port": 9095
+  },
+  "checkAction": {
+    "dns": "localhost",
+    "host": "0.0.0.0",
+    "port": 9096
+  },
+  "channelPoint":{
+    "dns": "localhost",
+    "host": "0.0.0.0",
+    "port": 9097
+  }
+}

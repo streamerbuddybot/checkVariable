@@ -1,0 +1,11 @@
+resources:
+- deployment.yaml
+- service.yaml
+# - ingress.yaml
+
+commonLabels:
+  app: streamwizard-backend-checkvariable
+
+commonAnnotations:
+  app: streamwizard-backend-checkvariable-annontations
+
