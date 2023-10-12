@@ -17,7 +17,7 @@ async function grpcServer() {
     ) => {
       let data = call.request.toObject();
 
-      console.log("data", data)
+
 
 
       if (!data) return callback(null, new CheckVariableResponse({ status: 401, message: "Missing channelID or songrequest data" }));
