@@ -91,7 +91,6 @@ export default async function (varable: string, channel: string, channelID: numb
 
 //calculateProgress in seconds
 function mstosec(ms: number) {
-  console.log("called");
 
   const seconds = Math.floor(ms / 1000);
   const minutes = Math.floor(seconds / 60);
